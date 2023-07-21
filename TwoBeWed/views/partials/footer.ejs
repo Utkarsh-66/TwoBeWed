@@ -1,0 +1,63 @@
+<footer>
+  <div class="footer"> created by <span>@Uttu Gupta</span> | All rights reserved. </div>
+</footer>
+
+
+<script>
+
+let menu = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.navbar');
+
+menu.addEventListener('click', () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('nav-toggle');
+});
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('nav-toggle');
+}
+
+const button = document.getElementById('myButton');
+ button.addEventListener('click', function(){
+   alert("We will contact you shortly.");
+ });
+
+ function showLoginPopup() {
+   var popup = document.getElementById("loginPopup");
+   popup.style.display = "block";
+ }
+
+
+var signinBtn = document.getElementById("signinBtn");
+signinBtn.addEventListener("click", openModal);
+
+function openModal() {
+  var modal = document.getElementById("loginModal");
+  modal.style.display = "block";
+}
+
+function closeModal() {
+  var modal = document.getElementById("loginModal");
+  modal.style.display = "none";
+
+  var signupModal = document.getElementById("signupModal");
+  signupModal.style.display = "none";
+}
+
+// function submitLoginForm(event) {
+//   event.preventDefault();
+//   // Perform login validation and authentication here
+//   // Hide the modal after login
+//   closeModal();
+// }
+//
+// function submitSignupForm(event) {
+//   event.preventDefault();
+//   // Perform signup form submission and validation here
+//   // Hide the modal after signup
+//   closeModal();
+// }
+
+
+</script>
